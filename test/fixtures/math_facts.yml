@@ -1,0 +1,12 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+<% (0..9).each do |first_number| %>
+<% (0..9).each do |second_number| %>
+n<%= first_number %>_<%= second_number %>:
+  first_number: <%= first_number %>
+  second_number: <%= second_number %>
+  answer: <%= first_number + second_number %>
+  user: user_1
+<% end %>
+<% end %>
